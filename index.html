@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Séries</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Séries populares de TV e streaming.</h1>
+            <small>Preencha os dados abaixo!!!</small>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Novas Séries</h2>
+                <form id="form-serie" method="post">
+
+                    <label for="title">Nome da Série:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="genero">Gênero:</label>
+                    <input id="genero" name="genero" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="numero_temporadas">Número de Temporadas:</label>
+                    <input id="numero_temporadas" name="numero_temporadas" type="number" required />
+
+                    <label for="ano_lancamento">Ano Lançamento:</label>
+                    <input id="ano_lancamento" name="ano_lancamento" type="number" required />
+
+                    <label for="plataforma">Plataforma:</label>
+                    <input id="plataforma" name="plataforma" type="text" required />
+
+                    <label for="imageUrl">URL da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+                    
+                    <button type="submit">Cadastrar séries</button>
+                </form>
+                <p id="resposta"></p>
+            </section>
+        </main>
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
